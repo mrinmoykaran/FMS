@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    tools:context=".Registration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/sp16"
+        android:orientation="vertical">
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets Get started"
+            android:fontFamily="@font/sofia_pro_black_az"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp25" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sofia_pro_black_az"
+            android:text="Create an account to get all features"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginTop="@dimen/sp16"
+            android:background="@drawable/custom_edittext_back"
+            android:drawableLeft="@drawable/ic_account"
+            android:padding="13dp"
+            android:drawablePadding="@dimen/sp16"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:layout_marginTop="@dimen/sp16"
+            android:background="@drawable/custom_edittext_back"
+            android:drawableLeft="@drawable/ic_call"
+            android:padding="13dp"
+            android:drawablePadding="@dimen/sp16"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:layout_marginTop="@dimen/sp16"
+            android:background="@drawable/custom_edittext_back"
+            android:drawableLeft="@drawable/ic_date"
+            android:drawableRight="@drawable/ic_date"
+            android:padding="13dp"
+            android:drawablePadding="@dimen/sp16"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:layout_marginTop="@dimen/sp16"
+            android:background="@drawable/custom_edittext_back"
+            android:drawableLeft="@drawable/ic_lock"
+            android:padding="13dp"
+            android:drawablePadding="@dimen/sp16"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:layout_marginTop="@dimen/sp16"
+            android:background="@drawable/custom_edittext_back"
+            android:drawableLeft="@drawable/ic_lock"
+            android:padding="13dp"
+            android:drawablePadding="@dimen/sp16"
+            android:textColorHint="#BABABA"
+            android:textColor="@color/white"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_rounded_buttonback"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:onClick="openLogin"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/dont"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/dont"
+                android:textSize="16sp"
+                android:text="@string/sign_in"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
